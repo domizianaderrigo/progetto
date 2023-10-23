@@ -1,0 +1,19 @@
+header {
+	background: #F01805;
+}
+
+li {
+	background: #B01919;
+	margin: 10px;
+	border: 1 px solid black;
+	font-size: 20px;
+}
+
+section {
+	font-size: 30px;
+}
+
+main {
+	width: 1400px;
+	margin: 0 auto;
+}
