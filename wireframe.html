@@ -6,16 +6,23 @@
 	<meta name="description" content="questa è la mia pagina di creazione cosplay">
 	<meta name="keywords" content="cosplay, commissioni">
 	<link rel="icon" href="img/iconblank.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+ 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Merriweather:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	<title>HOME</title>
 </head>
 <body>
 
 	<header> 
-		<div><a><img src="img/iconblank.png" width="60px"></a></div>
 		<nav>
-			<ul>
-				<li>HOME</li>
+			<!--<div class="primo">
+			<div class="logo"><a><img src="img/iconblank.png" width="60px"></a></div>
+			
+			</div>-->
+			<ul class="menu">
+				<li class="home"><a href="wireframe.html">HOME</a></li>
 				<li><a href="wireframeGALLERY.html">GALLERY</a></li>
 				<li><a href="wireframeCONTATTI.html">CONTATTI</a></li>
 				<li><a href="wireframePROGETTO.html">PROGETTO</a></li>
@@ -24,36 +31,43 @@
 	</header>
 
 	<main>
-		<section><h1>NOME SITO</h1>
+		<section>
+			<h1>NOME SITO</h1>
 			<div><img src="img/spadafantasy.png" width="1000px"></div>
 		</section>
 
-		<h2>ANTEPRIMA PREZZO</h2>
-			<form name="contatto">
-				<label for="tipo">tipo oggetto</label>
-					<select id="tipo">
-						<option value="casco">elmo</option>
-						<option value="accessorio piccolo">accessorio piccolo</option>
-						<option value="accessorio grande/arma">accessorio grande/arma</option>
-					</select>
-				<br>
-				<label for="materiale">materiale</label>
-					<select id="materiale">
-						<option>paper mache</option>
-						<option>resina</option>
-						<option>stoffa</option>
-					</select>
-				<br>	
-				<label id="quantità">quantità
-					<input id="quantità" type="number" name="number" min="1" max="5">
-				</label>
-				<br>
-				<input type="submit" value="invia">	
-			</form>
-		<h2>ANTEPRIMA GALLERY</h2>
-		<div><img src=""></div>
-		<div><img src=""></div>
-		<a href="wireframeGALLERY">APRI</a>
+		<div class="anteprime">
+			<div class="prezzo">
+				<h2>ANTEPRIMA PREZZO</h2>
+				<form name="contatto">
+					<label for="tipo">tipo oggetto</label>
+						<select id="tipo">
+							<option value="casco">elmo</option>
+							<option value="accessorio piccolo">accessorio piccolo</option>
+							<option value="accessorio grande/arma">accessorio grande/arma</option>
+						</select>
+					<br>
+					<label for="materiale">materiale</label>
+						<select id="materiale">
+							<option>paper mache</option>
+							<option>resina</option>
+							<option>stoffa</option>
+						</select>
+					<br>	
+					<label id="quantità">quantità
+						<input id="quantità" type="number" name="number" min="1" max="5">
+					</label>
+					<br>
+					<input type="submit" value="invia">	
+				</form>
+			</div>
+			<div class="gallery">
+				<h2>ANTEPRIMA GALLERY</h2>
+				<div><img src=""></div>
+				<div><img src=""></div>
+				<a href="wireframeGALLERY">APRI</a>
+			</div>
+		</div>
 
 	</main>
 

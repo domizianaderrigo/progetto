@@ -5,15 +5,123 @@ header {
 li {
 	background: #B01919;
 	margin: 10px;
-	border: 1 px solid black;
 	font-size: 20px;
-}
-
-section {
-	font-size: 30px;
+	padding: 10px;
 }
 
 main {
 	width: 1400px;
 	margin: 0 auto;
 }
+
+
+/* 
+p{
+	font-family: 'Inika', serif;
+	color: #000000; colore font
+	font-size: 14px;
+	line-height: 2;
+	font-weight: 400;
+	text-align: justify;
+	text-decoration: underline;  "none" se si vuole levare ex sottolineatura 
+	text-transform: uppercase;
+}
+*/
+
+.menu li a {
+	font-family: 'Inika', serif;
+	font-size: 25px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+body {
+	font-family: 'Inika', serif;
+	background: #FFFACD;
+	}
+
+
+
+ul.menu {
+	display: flex; /*allinea testi orizzontalmente*/
+	justify-content: space-between;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	align-items: center;
+/* flex-direction: row/column/ */
+}
+
+.menu li:first-child {
+	flex-grow: 1;
+	text-align: center;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: right;
+	/*margin: 0px;
+	margin-top: 10px;*/
+}
+
+.primo {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+header {
+	padding: 10px;
+}
+
+div.anteprime {
+	display: flex;
+	justify-content: space-around;
+}
+
+.prezzo {
+	border: 2px solid black;
+	padding: 30px 50px 50px;
+	margin: 30px;
+}
+
+form {
+	display: flex;
+    flex-direction: column;
+}
+
+.gallery {
+	border: 2px solid black;
+	padding: 30px 50px 50px;
+	margin: 30px;
+}
+
+
+
+
+/*pseudoclasse:
+selettore:hover {
+	color: #ffffff
+}
+
+si può usare anche in combinazione
+ul.menu > li:hover {
+	background: #ffffff
+}
+
+immagini background:
+
+.verdura {
+	background-image: url(../img/cibo.jpeg);
+	background-repeat: no-repeat; x non far ripetere l'immagine più volte
+	background-size: cover; x tagliare l'immagine dall'alto a sinistra
+	background-position-x: center; x tagliare l'img sull'asse
+	background-position-y: center;
+
+	 |
+	 v
+	background: url (../img/cibo.jpeg) no-repeat center center;
+	background-size: cover;
+}
+*/
