@@ -10,7 +10,9 @@
  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Merriweather:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+	<link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/lightslider.js"></script>
 	<title>HOME</title>
 </head>
 <body>
@@ -61,19 +63,48 @@
 					<input type="submit" value="invia">	
 				</form>
 			</div>
-			<div class="gallery">
-				<h2>ANTEPRIMA GALLERY</h2>
-				<div><img src=""></div>
-				<div><img src=""></div>
-				<a href="wireframeGALLERY">APRI</a>
-			</div>
-		</div>
 
+			<div class="gallery">
+			<h2>ANTEPRIMA GALLERY</h2>
+			<ul id="lightSlider">
+			  <li>
+			      <a><img src="img/iconblank.png" width="200px"></a>
+			  </li>
+			  <li>
+			      <a><img src="img/iconblank.png" width="200px"></a>
+			  </li>
+			  <li>
+			      <a><img src="img/iconblank.png" width="200px"></a>
+			  </li>
+ 			  <li>
+			      <a><img src="img/iconblank.png" width="200px"></a>
+			  </li>
+			</ul>
+			<div class="invia"><a href="wireframeGALLERY">APRI</a></div>
+		</div>
+			
+		</div>
+		
+	
 	</main>
 
 	<footer>
+
+		<ul class="bottom">
+				<li><a href="">email</a></li>
+				<li><a href="">insta</a></li>
+				<li><a href="">placeholder</a></li>
+		</ul>
 		
 	</footer>
+
+	<script type="text/javascript">
+  $(document).ready(function() {
+    $("#lightSlider").lightSlider({
+    	item: 1
+    }); 
+  });
+	</script>
 	
 </body>
 </html> 
